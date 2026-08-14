@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f7f5ef;
+  --color-ink: #292722;
+  --color-muted: #756f65;
+  --color-line: #ddd7cc;
+  --color-accent: #9b6d50;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply m-0 min-w-80 bg-paper font-sans text-ink antialiased; }
+  a:focus-visible { @apply outline-2 outline-offset-4 outline-accent; }
+}
